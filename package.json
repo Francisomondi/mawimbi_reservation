@@ -1,0 +1,15 @@
+{
+  "name": "mawimbi_seafood",
+  "version": "1.0.0",
+  "description": "a mawimbi sea food restaurants reservation form and member registration platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reaservation",
+    "registration"
+  ],
+  "author": "Francis Omondi",
+  "license": "ISC"
+}
