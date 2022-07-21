@@ -21,16 +21,16 @@ app.use(bodyparser.urlencoded({
 
 //view engine
 app.set("view engine", "ejs");
-app.use("views", path.resolve(__dirname, "views/ejs"));
+//app.use("views", path.resolve(__dirname, "views/ejs"));
 
 //load assets
-app.use("/css", expree.static(path.resolve(__dirname, "assets/css")));
-app.use("/img", expree.static(path.resolve(__dirname, "assets/img")));
-app.use("/js", expree.static(path.resolve(__dirname, "assets/js")));
+app.use("/css", express.static(path.resolve(__dirname, "assets/css")));
+app.use("/img", express.static(path.resolve(__dirname, "assets/img")));
+app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 
 
 app.get("/", (req, res) => {
-    res.send("mawimbi seafood application");
+    res.render("index")
 });
 
 app.listen(PORT, () => console.log(`server started runniing on port ${PORT}`));
